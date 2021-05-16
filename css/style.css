@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* Pulsanti di navigazione per spostarsi nella pagina */
+nav{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 1001;
+}
+.content-nav{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.content-nav > a{
+    text-decoration:none;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 5px 0 0;
+    background-color: white;
+    border-radius: 50%;
+}
+/* Contenitore dei vari modelli */
+div[class^="container-"] {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+/* posizionamento del contenuto */
+.logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+/* Colore dei vari container */
+.container-1{
+    background-color: red;
+}
+.container-2{
+    background-color: green;
+}
+.container-3{
+    background-color: yellow;
+}
+/* layout del testo posto aldisotto dell'immagine */
+.text-logo{
+    color: yellow;
+    font-size: 60px;
+    font-weight: 900;
+}
+.container-3 .text-logo{
+    color: green;
+}
